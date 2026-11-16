@@ -158,7 +158,7 @@ export default function Home() {
               </ul>
               <p>
                 <Link href="/#contact" className="btn btn--line">
-                  Message {site.guide.split(" ")[0]}
+                  Message Me!
                 </Link>
               </p>
             </div>
@@ -220,6 +220,13 @@ export default function Home() {
         <section id="contact" className="section section--ink">
           <div className="wrap contact">
             <div>
+              <Image
+                src="/lockup-one-line-white.svg"
+                alt={site.name}
+                width={200}
+                height={48}
+                className="contact__logo"
+              />
               <h2 className="h2 h2--light">Tell us your dates</h2>
               <p className="contact__lead">
                 Send the tour you like, your dates and where you are staying. You get a reply by email, usually within a day.

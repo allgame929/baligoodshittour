@@ -117,10 +117,24 @@ img {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
   font-weight: 800;
   font-size: 1.15rem;
   letter-spacing: -0.01em;
   text-decoration: none;
+}
+
+.brand__logo {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .brand__logo {
+    height: 32px;
+  }
 }
 
 .nav {
@@ -583,6 +597,96 @@ img {
   margin-top: 20px;
 }
 
+/* Pagination */
+.pagination {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.pagination__btn:hover:not(:disabled):not([aria-current="page"]) {
+  border-color: var(--ink);
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.pagination__btn[aria-current="page"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+  cursor: default;
+}
+
+.pagination__btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--line);
+  background: transparent;
+}
+
+.pagination__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+}
+
+.pagination__arrow svg {
+  display: block;
+}
+
+.pagination__ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 42px;
+  color: var(--stone);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    margin-top: 36px;
+    gap: 6px;
+  }
+  .pagination__btn {
+    min-width: 38px;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+  .pagination__arrow {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 /* Steps */
 .steps {
   display: grid;
@@ -714,6 +818,21 @@ img {
   .contact {
     grid-template-columns: 0.9fr 1.1fr;
     gap: 72px;
+  }
+}
+
+.contact__logo {
+  height: 42px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+  .contact__logo {
+    height: 36px;
+    margin-bottom: 18px;
   }
 }
 
@@ -868,7 +987,7 @@ img {
   margin-bottom: 16px;
   font-weight: 600;
   text-underline-offset: 4px;
-  color: var(--sun);
+  color: var(--sunnpm);
 }
 
 .tour__title {

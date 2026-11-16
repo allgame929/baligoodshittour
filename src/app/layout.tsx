@@ -11,6 +11,13 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  icons: {
+    icon: [
+      { url: "/sun-badge.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/sun-badge.svg",
+    apple: "/sun-badge.svg",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
