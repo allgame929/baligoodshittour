@@ -3,6 +3,7 @@ import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/source-serif-4";
 import "./globals.css";
 import { site } from "@/data/site";
+import { ScrollReset } from "@/components/ScrollReset";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -39,8 +40,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
+        <ScrollReset />
         <a className="skip" href="#main">
           Skip to content
         </a>

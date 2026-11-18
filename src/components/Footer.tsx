@@ -1,11 +1,13 @@
 import { site } from "@/data/site";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="wrap footer__row">
         <p>
-          &copy; {site.name}, {site.region}.
+          &copy; {currentYear} {site.name}, {site.region}.
         </p>
         {(site.whatsapp || site.instagram) && (
           <p>

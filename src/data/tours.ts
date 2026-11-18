@@ -1119,58 +1119,5 @@ export const tours: Tour[] = [
       "groups"
     ],
     "note": "Stop menu by area: Ubud (Tegalalang, Tirta Empul, Monkey Forest, Tegenungan); Kintamani (Batur viewpoint, coffee plantation); North (Ulun Danu Beratan, Gitgit, Banyumala); East (Tirta Gangga, Taman Ujung, Tukad Cepung); South (Uluwatu, Padang-Padang); West (Tanah Lot, Jatiluwih)."
-  },
-  {
-    "id": 19,
-    "slug": "bali-private-tour-with-a-female-guide-custom-route",
-    "title": "Bali: Private Tour with a Female Guide, Custom Route",
-    "region": "Anywhere in Bali",
-    "interest": "Custom",
-    "format": "Private",
-    "duration": "flexible, about 8 hours",
-    "hours": 8,
-    "start": "08:30",
-    "summary": "Explore Bali with a female guide who plans the day around you. Choose temples, villages or waterfalls at a relaxed pace that suits solo women, mothers and friends traveling together.",
-    "highlights": [
-      "Travel with a female guide and a trusted private driver",
-      "Build the day around your interests, from culture to nature",
-      "Get a calm pace, with plenty of photo and rest stops",
-      "Receive pickup and drop-off at your hotel"
-    ],
-    "itinerary": [
-      {
-        "text": "Hotel pickup at 08:30"
-      },
-      {
-        "text": "Three to four stops chosen from the Ubud, Kintamani or East Bali menu, 60-90 min each"
-      },
-      {
-        "text": "A lunch stop, 60 min"
-      },
-      {
-        "text": "About 17:00 drop-off"
-      }
-    ],
-    "includes": [
-      "private vehicle",
-      "female guide",
-      "driver",
-      "bottled water",
-      "parking"
-    ],
-    "excludes": [
-      "entrance fees",
-      "lunch",
-      "tips"
-    ],
-    "meetingPoint": "hotel pickup in Ubud, Sanur, Seminyak, Canggu and Kuta",
-    "options": "options for a half-day or full day; add-on for lunch",
-    "keywords": [
-      "private tour",
-      "women",
-      "solo travelers",
-      "culture",
-      "customizable"
-    ]
   }
 ];
